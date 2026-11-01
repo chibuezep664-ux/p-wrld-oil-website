@@ -1,0 +1,1 @@
+import {HomeSections} from '@/components/home-sections';import type {Metadata} from 'next';export const metadata:Metadata={title:'Petroleum Supply & Automotive Parts Enquiries',description:'P-WRLD OIL connects petroleum, industrial product and automotive parts enquiries with a customer-focused quotation process.'};export default function Home(){return <HomeSections/>}

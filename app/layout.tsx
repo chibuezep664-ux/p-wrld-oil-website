@@ -1,0 +1,4 @@
+import type {Metadata} from 'next';import './globals.css';import {Navigation} from '@/components/navigation';import {Footer} from '@/components/footer';
+const site=process.env.NEXT_PUBLIC_SITE_URL||'https://example.com';
+export const metadata:Metadata={metadataBase:new URL(site),title:{default:'P-WRLD OIL | Energy in Motion. Parts That Perform.',template:'%s | P-WRLD OIL'},description:'Petroleum, industrial products and automotive parts enquiries. Seven years of business experience, serving Chicago and international European markets.',openGraph:{type:'website',siteName:'P-WRLD OIL',title:'P-WRLD OIL — Energy in Motion. Parts That Perform.',description:'Petroleum, industrial products and automotive parts enquiries.'},icons:{icon:'/icon.svg'}};
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en" data-scroll-behavior="smooth"><body><Navigation/><main>{children}</main><Footer/></body></html>}

@@ -1,0 +1,2 @@
+import {createSupabaseServer} from '@/lib/supabase/server';
+export async function requireAdmin(){if(!process.env.NEXT_PUBLIC_SUPABASE_URL||!process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY||!process.env.ADMIN_EMAILS)return null;const supabase=await createSupabaseServer();const {data:{user},error}=await supabase.auth.getUser();if(error||!user?.email)return null;const allowed=(process.env.ADMIN_EMAILS||'').split(',').map(x=>x.trim().toLowerCase()).filter(Boolean);return allowed.includes(user.email.toLowerCase())?{user,supabase}:null}
