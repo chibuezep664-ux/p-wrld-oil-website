@@ -1,4 +1,7 @@
-# P-WRLD OIL website
+# p-wrld-oil-website
+Premium petroleum and automotive parts business website for P-WRLD OIL.
+
+## P-WRLD OIL website
 
 A Next.js App Router application for public product enquiries and protected enquiry administration. Company copy is restricted to facts supplied by the business. Product categories are enquiry categories, not confirmed inventory.
 
@@ -70,4 +73,4 @@ The form uses client and server Zod validation, honeypot spam field, request-siz
 
 ## Verification status
 
-A successful local production build and automated unit/e2e checks must be run in the actual environment before deployment. Supabase persistence/RLS, Auth, production AI behavior, provider failure modes, responsive browser behavior, and live deployment require configured services and have not been independently verified by the source scaffold. Do not treat this project as legally reviewed. Product photos are illustrative third-party photography and are not represented as company inventory; replace or verify image licenses before commercial launch.
+A successful local production build and automated unit/e2e checks must be run in the actual environment before deployment. Supabase persistence/RLS, Auth, email delivery, responsive browser behavior, and live deployment require configured services and have not been independently verified by the source scaffold. Do not treat this project as legally reviewed. Product photos are illustrative third-party photography and are not represented as company inventory; replace or verify image licenses before commercial launch.
